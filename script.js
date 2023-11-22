@@ -10,6 +10,10 @@ const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Sa
 const d = new Date();
 let days = weekday[d.getDay()];
 
+const allMonth = ["January","February","March","April","May","June","July", "August", "September", "October", "November", "December"];
+const m = new Date();
+let months = allMonth[d.getMonth()];
+
 
 setInterval(() => {
     let currentTime = new Date();
@@ -20,6 +24,7 @@ setInterval(() => {
     month.innerHTML = currentTime.getMonth() + 1
     year.innerHTML = currentTime.getFullYear()
     day.innerHTML =  days
+    month.innerHTML =  months
 }, 1000)
 
 console.log(setInterval)
